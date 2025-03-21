@@ -1,20 +1,20 @@
 def display_current_inventory(inventory_list)
   # use #each to iterate through each item of the inventory_list (a hash)
   # use puts to output each list item "<key>, quantity: <value>" to console
-  inventory_list.each {|key, quantity| puts "#{key}, quantity: #{quantity}"}
+  inventory_list.each { |key, quantity| puts "#{key}, quantity: #{quantity}" }
 end
 
 def display_guess_order(guesses)
   # use #each_with_index to iterate through each item of the guesses (an array)
   # use puts to output each list item "Guess #<number> is <item>" to console
   # hint: the number should start with 1
-  guesses.each_with_index{|item, idx| puts "Guess ##{idx + 1} is #{item}"}
+  guesses.each_with_index{ |item, idx| puts "Guess ##{idx + 1} is #{item}" }
 end
 
 def find_absolute_values(numbers)
   # use #map to iterate through each item of the numbers (an array)
   # return an array of absolute values of each number
-  numbers.map {|number| number.abs}
+  numbers.map { |number| number.abs }
 end
 
 def find_low_inventory(inventory_list)
