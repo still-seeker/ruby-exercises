@@ -5,22 +5,22 @@ end
 
 def first_element(array)
   # return the first element of the array
-  return array[0]
+  array[0]
 end
 
 def third_element(array)
   # return the third element of the array
-  return array[2]
+  array[2]
 end
 
 def last_three_elements(array)
   # return the last 3 elements of the array
-  return array.length > 3? array[array.length - 3, 3]: array
+  array.length > 3? array.last(3): array
 end
 
 def add_element(array)
   # add an element (of any value) to the array
-  return array << "eyo"
+  array << "eyo"
 end
 
 def remove_last_element(array)
@@ -40,27 +40,27 @@ end
 
 def array_concatenation(original, additional)
   # return an array adding the original and additional array together
-  return original.concat(additional)
+  original.concat(additional)
 end
 
 def array_difference(original, comparison)
   # return an array of elements from the original array that are not in the comparison array
-  return original - comparison
+  original - comparison
 end
 
 def empty_array?(array)
   # return true if the array is empty
-  return array == [] ? true : false
+  array.empty?
 end
 
 def reverse(array)
   # return the reverse of the array
-  array.reverse()
+  array.reverse
 end
 
 def array_length(array)
   # return the length of the array
-  return array.length
+  array.length
 end
 
 def include?(array, value)
